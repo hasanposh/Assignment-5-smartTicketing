@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticket</title>
+    <!-- daisyUI link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- taiwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- custom taiwind css -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                primaryColor : '#1DD100',
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="raleway-font">
+    <div class="container mx-auto">
+      <header>
+        <!-- nav section -->
+        <nav class="py-6">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Search</a></li>
+                  <li><a>Destination</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-2xl font-extrabold">E-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+                <li><a>Destination</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a
+                class="btn border-primaryColor/40 text-primaryColor bg-primaryColor/10 font-bold"
+                >Bus <img src="images/bus-icon.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </nav>
+        <!-- banner section -->
+        <div
+          class="flex flex-col justify-center items-center w-full h-[600px] bg-[url('./images/banner.png')] bg-cover bg-center rounded-xl text-white text-center gap-8"
+        >
+          <h1 class="text-6xl font-extrabold">
+            End-to-End Travel with
+            <br />
+            <span class="text-primaryColor">E Paribahan</span>
+          </h1>
+          <p>
+            Yes, you can run unit tests and view the results directly within the
+            app. The
+            <br />
+            integrated testing features allow for a streamlined .
+          </p>
+          <button class="btn bg-primaryColor border-none font-extrabold">Buy Ticket</button>
+        </div>
+        <!-- 3 div under banner  -->
+        <div class="w-3/4 mx-auto translate mt-[-60px] flex flex-col lg:flex-row justify-between">
+            <div class="flex border-b-4 border-primaryColor rounded-xl bg-white p-8 gap-10 items-center">
+                <img class="size-max" src="images/people.png" alt="">
+                <div>
+                    <h3 class="font-extrabold text-6xl">500</h3>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="flex border-b-4 border-primaryColor rounded-xl bg-white p-8 gap-10 items-center">
+                <img class="size-max" src="images/stoppage.png" alt="">
+                <div>
+                    <h3 class="font-extrabold text-6xl">500</h3>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            <div class="flex border-b-4 border-primaryColor rounded-xl bg-white p-8 gap-10 items-center">
+                <img class="size-max" src="images/ticket-cupon.png" alt="">
+                <div>
+                    <h3 class="font-extrabold text-6xl">500</h3>
+                    <p>Registered users</p>
+                </div>
+            </div>
+            
+        </div>
+      </header>
+    </div>
+    <main>
+        <div class=" my-16">
+            <p class="text-4xl font-extrabold text-center pb-10">Best offers for you</p>
+            <!--coupon ticket section -->
+            <div class="container mx-auto flex flex-col justify-around lg:flex-row gap-8" >
+                <div class="bg-[#FFBF0F] flex rounded-xl items-center">
+                    <div class="p-2 lg:p-12 space-y-2">
+                        <h3 class="text-4xl font-extrabold">15% OFF
+                            </h3>
+                        <p class="font-extrabold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                        <div class="p-2 lg:p-12 space-y-2">
+                            <h3 class="text-4xl font-extrabold">NEW15
+                                </h3>
+                            
+                            <p>Coupon Code</p>
+                        </div>
+                </div>
+                
+                <div class="bg-[#F78C9C] flex rounded-xl items-center">
+                    <div class="p-2 lg:p-12 space-y-2">
+                        <h3 class="text-4xl font-extrabold">20% OFF
+                            </h3>
+                        <p class="font-extrabold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img  src="images/cupon-devider.png" alt="">
+                        <div class= "p-2 lg:p-12 space-y-2">
+                            <h3 class="text-4xl font-extrabold">Couple20
+                                </h3>
+                            
+                            <p>Coupon Code</p>
+                        </div>
+                </div>
+                
+                
+            </div>
+            <div class="flex justify-center mt-20 mb-40">
+                <button class="btn text-primaryColor bg-white border-primaryColor">See All Offers</button>
+            </div>
+            <!-- paribahan div start -->
+            <div class="border-t-2 border-primaryColor rounded-xl bg-slate-50 h-16">
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
