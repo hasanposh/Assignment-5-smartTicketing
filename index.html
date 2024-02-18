@@ -180,7 +180,7 @@
         </div>
         <!-- paribahan div start -->
         <div
-          class="border-t-2 border-primaryColor rounded-[150px] bg-slate-50 py-20"
+          class="border-t-2 border-primaryColor rounded-t-[150px] bg-slate-50 py-20"
         >
           <p class="text-4xl font-extrabold text-center">E-Paribahan</p>
           <p class="text-center pt-8">
@@ -231,6 +231,9 @@
                   <div class="bg-slate-200 rounded-xl p-4">
                     <p class="font-extrabold">Boarding Point - Laxmipur</p>
                   </div>
+                  <div class="bg-slate-200 rounded-xl p-4">
+                    <p class="font-extrabold">Boarding Point - Laxmipur</p>
+                  </div>
                    
                 </div>
               </div>
@@ -247,17 +250,115 @@
             </div>
           </div>
           <!-- seats of bus section -->
-          <div class="container mx-auto bg-white">
+          <div class="container mx-auto flex flex-col lg:flex-row justify-between bg-white p-4 gap-4 rounded-xl">
             <!-- seats section -->
-            <div>
-
-            </div>
+            <div class="flex-1 p-8 space-y-4">
+                <p class="font-extrabold text-3xl">Select Your Seat</p>
+                <div class="border-t-2 border-dashed border-b-2 flex justify-between py-4">
+                    <div class="flex items-center gap-2">
+                        <img src="images/seat-gray.png" alt="">
+                        <p > available</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="images/seat-green-filled.png" alt="">
+                        <p > Selected</p>
+                    </div>
+                    
+                </div>
+                <!-- driver seat -->
+                <div class="flex justify-end">
+                    <button class="btn w-28"><img src="images/Vector.png" alt=""></button>
+                </div>
+                <!-- steats container-->
+                <div id="seats container" class="space-y-4">
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                    <!-- row A -->
+                    <div class="flex gap-4 items-center justify-between ">
+                        <p>A</p>
+                        <button class="btn w-28">A1</button>
+                            <button class="btn w-28">A2</button>
+                            <button class="btn w-28">A3</button>
+                            <button class="btn w-28">A4</button>
+                    </div>
+                   
+                </div>
+            </div >
             <!-- select your seat section -->
-            
+            <div class="border-l-2 border-dashed flex-1">
+            <p class="  font-extrabold text-3xl">Select Your Seat</p>
           </div>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class=" bg-[#030712] text-white p-4">
+        <footer class="footer justify-between w-full p-10">
+            <nav>
+              <h6 class="footer-title text-4xl">E-Ticket</h6> 
+              
+              <a class="link link-hover">P-Ticket is a digital platform to make your
+                <br>
+                daily commuting better.</a>
+            
+            </nav> 
+            
+            <nav>
+              <a class="link link-hover">Download Our app</a>
+              <a class="link link-hover"><img class="size-1/4" src="images/playstore2.png" alt=""></a>
+              
+            </nav>
+          </footer> 
+          <footer class="footer px-10 py-4 border-t border-dashed  border-base-300">
+            <aside class="items-center grid-flow-col">
+              
+              <p>@all rights reserved, P-Ticket services limited.2024</p>
+            </aside> 
+            <nav class="md:place-self-center md:justify-self-end">
+              <div class="grid grid-flow-col gap-4">
+                <a>Terms & condition</a>
+                <a>Return & refund policy</a>
+                <a>Privacy policy</a>
+              </div>
+            </nav>
+          </footer>
+    </footer>
   </body>
 </html>
