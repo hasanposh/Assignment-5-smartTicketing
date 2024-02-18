@@ -9,7 +9,7 @@ const seats = seatsContainer.querySelectorAll('.btn');
 
 for (const seat of seats) {
     seat.addEventListener('click', function (e) {
-        seatCount++
+        seatCount++;
         if(seatCount <= 4){
             if (seatCount == 4) {
                 document.getElementById('coupon-apply-btn').removeAttribute('disabled')
@@ -45,12 +45,11 @@ for (const seat of seats) {
             priceTable.appendChild(div);
 
 
-            totalPrice = ticketPrice * seatCount
+            totalPrice = ticketPrice * seatCount;
 
-            document.getElementById('total-price').innerText = totalPrice
+            document.getElementById('total-price').innerText = totalPrice;
 
-
-
+            document.getElementById('grand-total').innerText = totalPrice;
 
         }
         else{
@@ -65,13 +64,7 @@ for (const seat of seats) {
 
 function couponApplyBtn() {
     const inputCoupontext = document.getElementById('coupon-input-field').value;
-    console.log(inputCoupontext)
-    const inputCoupontextValid1 = inputCoupontext.split(' ').join('').toUpperCase()
-    const firstLetterUp = inputCoupontext[0].toUpperCase()
-    const inputCoupontextValid2 = firstLetterUp + inputCoupontext.slice(1)
-
-    console.log(inputCoupontextValid2)
-    if (inputCoupontextValid1 === 'NEW15') {
+    if (inputCoupontext === 'NEW15') {
         const totalPriceText = document.getElementById('total-price').innerText;
         totalPriceNumber = parseInt(totalPriceText);
         discountedPrice = totalPriceNumber * 15/100;
@@ -86,15 +79,33 @@ function couponApplyBtn() {
         h3One.innerText = 'Discount';
         h3Two.innerText = 'BDT'+" " + discountedPrice;
 
-        document.getElementById('discount').appendChild(h3One)
-        document.getElementById('discount').appendChild(h3Two)
+        discountContainer.appendChild(h3One)
+        discountContainer.appendChild(h3Two)
 
-        
+        document.getElementById('coupon-input-container').classList.add('hidden')
     }
-    else if (inputCoupontextValid2 === 'Couple 20') {
-        console.log('hehe')
+    else if (inputCoupontext === 'Couple 20') {
+        const totalPriceText = document.getElementById('total-price').innerText;
+        totalPriceNumber = parseInt(totalPriceText);
+        discountedPrice = totalPriceNumber * 20/100;
+        grandTotalPrice = totalPriceNumber - discountedPrice; 
+        console.log(grandTotalPrice)
+        document.getElementById('grand-total').innerText = grandTotalPrice
+
+        const discountContainer = document.getElementById('discount')
+        const h3One = document.createElement('h3')
+        const h3Two = document.createElement('h3')
+
+        h3One.innerText = 'Discount';
+        h3Two.innerText = 'BDT'+" " + discountedPrice;
+
+        discountContainer.appendChild(h3One)
+        discountContainer.appendChild(h3Two)
+
+        document.getElementById('coupon-input-container').classList.add('hidden')
     }
     else {
         alert('Invalid Coupon')
     }
 }
+
