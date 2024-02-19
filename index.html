@@ -408,7 +408,7 @@
               <div class="label">
                 <span class="label-text font-extrabold">Phone Number*</span>
               </div>
-              <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
+              <input type="number" oninput="changeFunction()" id="phone-input-field" placeholder="Enter Your Phone Number" class="input input-bordered w-full" />
             </label>
             <label class="form-control w-full ">
               <div class="label">
@@ -416,7 +416,7 @@
               </div>
               <input type="text" placeholder="Enter Your Email" class="input input-bordered w-full" />
             </label>
-            <button onclick="my_modal.showModal()" class="bg-primaryColor btn w-full text-white font-extrabold" >
+            <button id="next-btn" disabled onclick="my_modal.showModal()" class="bg-primaryColor btn w-full text-white font-extrabold" >
               Next
             </button>
             <div class="flex justify-around">
